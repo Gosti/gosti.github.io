@@ -17,8 +17,8 @@
         Hi I’m Pierre,<br />
         but everybody calls me <span class="underline">Gosti</span>
       </h1>
-      <div class="parent">
-        <div class="div1">
+      <div id="header">
+        <div id="header-img">
           <img
             id="main-img"
             src="/images/main.png"
@@ -26,19 +26,19 @@
             srcset=""
           />
         </div>
-        <div class="div2">
+        <div id="header-text-1">
           <h1 class="computer-love">
             I fell in love with computers and coding years ago
           </h1>
         </div>
-        <div class="div3">
+        <div id="header-text-2">
           <h1 class="computer-love">
             Keep scrolling I’ll explain everything
           </h1>
         </div>
       </div>
     </div>
-    <div class="text-centered section">
+    <div class="text-centered section" id="quick-access">
       <h2>Quick Access</h2>
       <ul class="quick-access-link-list">
         <li><a class="quick-access-link" href="#experience">Experience</a></li>
@@ -50,49 +50,64 @@
     </div>
     <div class="section">
       <h1 class="underline" id="experience">Experience</h1>
-      <div id="experiences">
+      <div id="experiences" class="list">
         <div>
           <h3>
             TechYourLab ·
             <span class="light">Side project</span>
           </h3>
-          <p>
-            <span class="light">Since Jan. 2020</span> Creating a SRE oriented
-            MOOC platform as a side project, it packed an in app webshell spawn
-            as needed for the courses, a test area and many more features.
-          </p>
+          <div class="info">
+            <div class="info-date light">Since Jan. 2020</div>
+            <div class="info-text">
+              Creating a SRE oriented MOOC platform as a side project, it packed
+              an in app webshell spawn as needed for the courses, a test area
+              and many more features.
+            </div>
+          </div>
         </div>
         <div>
           <h3>Veepeez · <span class="light">FullStack</span></h3>
-          <p>
-            <span class="light">Oct. 2017 - Nov. 2019</span> Intrapreneurship
-            project at Station F (The World's Biggest Startup Incubator).
-            Development of a new mobile application focused on a new social
-            shopping experience targeting millennials.
-          </p>
+          <div class="info">
+            <div class="info-date light">Oct. 2017 - Nov. 2019</div>
+            <div class="info-text">
+              Intrapreneurship project at Station F (The World's Biggest Startup
+              Incubator) for veepee (formerly known as vente-privée).<br />
+              Development of a new mobile application focused on a new social
+              shopping experience targeting millennials.
+            </div>
+          </div>
         </div>
         <div>
           <h3>
             Veepee · <span class="light">Research and Development Intern</span>
           </h3>
-          <p>
-            <span class="light">Jan. 2017 - Oct. 2017</span> Internship at
-            Veepee inside the research and development lab in partnership with
-            my school 42, while there worked on a 3D scanner using photogrametry
-            <a
-              href="https://medium.com/@vptech/virtual-staging-a-new-way-to-see-the-products-d38d2f4ef418
+          <div class="info">
+            <div class="info-date light">Jan. 2017 - Oct. 2017</div>
+            <div class="info-text">
+              Internship at Veepee inside the research and development lab in
+              partnership with my school 42, while there worked on a 3D scanner
+              using photogrametry
+              <a
+                href="https://medium.com/@vptech/virtual-staging-a-new-way-to-see-the-products-d38d2f4ef418
 "
-              target="_blank"
-              alt="medium article 3D scanner"
-              >[see]</a
-            >, an idea aggregator/hackathon manager and a candidate selection
-            plateform.
-          </p>
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="medium article 3D scanner"
+                >[see]</a
+              >, an idea aggregator/hackathon manager and a candidate selection
+              plateform.
+            </div>
+          </div>
         </div>
         <div>
           <h3>Topito · <span class="light">Intern</span></h3>
-          <span class="light">Jul. 2014 - Nov. 2014</span> Worked on a make-over
-          of the administration panel and adding an polling system
+          <div class="info">
+            <div class="light">Jul. 2014 - Nov. 2014</div>
+            <div class="info-text">
+              Worked on a make-over of the administration panel and adding an
+              polling system
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -106,7 +121,7 @@
           Tech I love using
         </div>
       </div>
-      <div id="competences-list">
+      <div class="flex-list">
         <div>
           <h3>Backend</h3>
           <ul>
@@ -150,16 +165,110 @@
     </div>
     <div class="section">
       <h1 class="underline" id="education">Education</h1>
-      <div>
+      <div class="list">
         <h3>42, Paris</h3>
-        <p>
-          <span class="light">Nov. 2013 - Nov. 2017</span> 42 Is a free
-          programming school created by the French entrepreneur and
-          philanthropist Xavier Niel, I've been from the first promotion.<br />
-          While there I learned most of my skills and how to adapt to all
-          situation
-        </p>
+        <div class="info">
+          <div class="info-date light">Nov. 2013 - Nov. 2017</div>
+          <div class="info-text">
+            42 Is a free programming school created by the French entrepreneur
+            and philanthropist Xavier Niel, I've been from the first
+            promotion.<br />
+            While there I learned most of my skills and how to adapt to all
+            situation.<br />
+            The first year of the cursus is mainly C and unix, later years are
+            more open to diverses languages.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h1 class="underline" id="hobbies">Hobbies</h1>
+      <div class="list">
+        <div>
+          <h3>Coder Dojo· <span class="light">Mentor</span></h3>
+          <div class="info">
+            <div class="light info-date">Since div. 2015</div>
+            <div class="info-text">
+              Coder Dojo info-date is an association where children, old enough
+              to type on a keyboard, come to learn programming.<br />
+              Younger ones learn scratch<a
+                href="https://scratch.mit.edu"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="scratch link"
+                >[see]</a
+              >
+              a blocked based programing interface and will later learn HTML or
+              create basics mobile applications.<br /><br />
+              If you're Paris based and want to mentor kids on your free time
+              once a month:
+              <a
+                href="https://twitter.com/coderdojoparis"
+                target="_blank"
+                rel="noopener noreferrer"
+                alt="coder dojo twitter"
+                >@CoderDojoParis</a
+              >
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3>Dot Conferences · <span class="light">Volunteer</span></h3>
+          <div class="info">
+            <div class="info-date light">Nov. 2015 - Nov. 2018</div>
+            <div class="info-text">Helping setting up and the conferences</div>
+          </div>
+        </div>
+        <div>
+          <h3>
+            Mycraft (gaming community) · <span class="light">Volunteer</span>
+          </h3>
+          <div class="info">
+            <div class="info-date light">2010 - 2013</div>
+            <div class="info-text">Creating mods, managing Unix servers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <h1 class="underline" id="contact">Contact</h1>
+      <div>
+        <h3>
+          Mail:
+          <span class="light" id="nope"></span>
+        </h3>
+        <h3>
+          Github:
+          <a
+            class="light"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/gosti"
+            >@gosti</a
+          >
+        </h3>
+        <h3>
+          Twitter:
+          <a
+            class="light"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/mrgosti/"
+            >@mrgosti</a
+          >
+        </h3>
+        <h3>
+          Linkedin:
+          <a
+            class="light"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/mrgosti/"
+            >@mrgosti</a
+          >
+        </h3>
       </div>
     </div>
   </body>
+  <script src="mailfuzz.js"></script>
 </html>
