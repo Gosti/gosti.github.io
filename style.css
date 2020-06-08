@@ -45,6 +45,9 @@ h2 {
 #header-text-2 {
   grid-area: 2 / 2 / 3 / 3;
 }
+#header-text-3 {
+  grid-area: 3 / 2 / 3 / 3;
+}
 
 .section {
   margin-bottom: 5vh;
@@ -182,8 +185,15 @@ h2 {
   height: auto;
 }
 
-/* wide-screen */
 @media (min-width: 992px) {
+  body {
+    margin-left: 8vw;
+    margin-right: 8vw;
+  }
+}
+
+/* wide-screen */
+@media (min-width: 1600px) {
   body {
     margin-left: 15vw;
     margin-right: 15vw;
@@ -230,4 +240,20 @@ h2 {
   a[href]:after {
     content: " (" attr(href) ")";
   }
+}
+
+.button {
+  padding: 8px 14px 8px 14px;
+  margin: 14px 12px 14px 12px;
+  min-width: 88px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #00a896;
+  color: white;
 }
